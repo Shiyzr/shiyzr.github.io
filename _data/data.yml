@@ -283,19 +283,19 @@ skills:
   #   level: 60%
   
   - name: C++
-  - level: 60%
+    level: 60%
 
   - name: Dify
-  - level: 60%
+    level: 60%
 
   - name: Photoshop
-  - level: 60%
+    level: 60%
 
   - name: Python
-  - level: 50%
+    level: 50%
 
   - name: QT
-  - level: 50%
+    level: 50%
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
