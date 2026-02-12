@@ -16,7 +16,7 @@ const defaultAnimations = {
     transition: {
       duration: 0.6,
       delay: delay,
-      ease: "easeOut",
+      ease: "easeOut" as const,
     },
   }),
 };

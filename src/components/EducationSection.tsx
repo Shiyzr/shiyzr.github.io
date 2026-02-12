@@ -48,7 +48,7 @@ export default function EducationSection() {
                     </h4>
                   </div>
                   <ul className="list-none ml-4 space-y-2 text-sm">
-                    {edu.achievements.map((achievement, i) => (
+                    {edu.achievements?.map((achievement, i) => (
                       <motion.li
                         key={i}
                         className="text-muted-foreground relative pl-6"

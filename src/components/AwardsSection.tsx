@@ -6,6 +6,8 @@ import { GlassCard } from "./ui/glass-card";
 import { motion } from "framer-motion";
 
 export default function AwardsSection() {
+  if (!awards || awards.length === 0) return null;
+
   return (
     <section
       id="awards"
@@ -19,7 +21,7 @@ export default function AwardsSection() {
         </MotionWrapper>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {awards.map((award, index) => (
+          {awards.map((award: any, index: number) => (
             <MotionWrapper key={award.name + award.date} delay={index * 0.1}>
               <GlassCard className="p-4 dark:border-purple-500/10 hover:border-purple-500/30 transition-all duration-300 flex flex-col h-full">
                 <div className="flex items-center mb-2">

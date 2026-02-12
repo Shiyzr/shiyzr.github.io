@@ -9,7 +9,7 @@ export default defineConfig({
   site: 'https://shiyzr.github.io',
   base: '/',
   vite: {
-      plugins: [tailwindcss()],
+      plugins: [/** @type {any} */ (tailwindcss())],
   },
 
   integrations: [react()]

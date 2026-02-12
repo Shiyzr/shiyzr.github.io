@@ -13,6 +13,8 @@ import MotionWrapper from "./MotionWrapper";
 import { motion } from "framer-motion";
 
 export default function ProjectsSection() {
+  if (!projects || projects.length === 0) return null;
+
   return (
     <section id="projects" className="py-12 relative">
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
@@ -23,7 +25,7 @@ export default function ProjectsSection() {
         </MotionWrapper>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project, index) => (
+          {projects.map((project: any, index: number) => (
             <MotionWrapper key={project.title} delay={index * 0.2}>
               <GlassCard className="group overflow-hidden dark:border-purple-500/10 h-full flex flex-col">
                 <CardHeader className="bg-gradient-to-r from-purple-500/5 to-pink-500/5">
@@ -33,7 +35,7 @@ export default function ProjectsSection() {
                 </CardHeader>
                 <CardContent className="flex-grow">
                   <ul className="list-disc ml-4 space-y-1 text-sm group-hover:space-y-2 transition-all duration-300">
-                    {project.description.map((desc, i) => (
+                    {project.description?.map((desc: string, i: number) => (
                       <motion.li
                         key={i}
                         className="text-muted-foreground"

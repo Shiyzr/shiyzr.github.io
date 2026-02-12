@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
 export default function ExperienceSection() {
+  if (!workExperience || workExperience.length === 0) return null;
+
   return (
     <section
       id="experience"
@@ -49,7 +51,7 @@ export default function ExperienceSection() {
                   <h4 className="text-sm font-medium">Key Achievements</h4>
                 </div>
                 <ul className="list-none ml-4 space-y-2 text-sm">
-                  {job.achievements.map((achievement, i) => (
+                  {job.achievements?.map((achievement: string, i: number) => (
                     <motion.li
                       key={i}
                       className="text-muted-foreground relative pl-6"

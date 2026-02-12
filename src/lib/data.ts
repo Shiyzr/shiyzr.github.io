@@ -1,4 +1,13 @@
-export const personalInfo = {
+export const personalInfo: {
+  name: string;
+  location: string;
+  email: string;
+  github: string;
+  linkedin?: string;
+  blog: string;
+  profilePicture: string;
+  heroDescription: string;
+} = {
   name: "Yangziran Shi",
   location: "Beijing, China",
   email: "shiyzr@stu.pku.edu.cn",
@@ -32,8 +41,15 @@ export const personalInfo = {
 //     ],
 //   },
 // ];
+export const workExperience: any[] = [];
 
-export const education = [
+export const education: {
+  institution: string;
+  location: string;
+  degree: string;
+  period: string;
+  achievements?: string[];
+}[] = [
   {
     institution: "Peking University",
     location: "Beijing",
@@ -93,6 +109,7 @@ export const skills = {
 //     ],
 //   },
 // ];
+export const projects: any[] = [];
 
 // export const awards = [
 //   {
@@ -103,3 +120,4 @@ export const skills = {
 //     position: "First Place",
 //   },
 // ];
+export const awards: any[] = [];
