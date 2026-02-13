@@ -13,7 +13,7 @@ export const personalInfo: {
   email: "shiyzr@stu.pku.edu.cn",
   github: "https://github.com/shiyzr",
   // linkedin: "https://linkedin.com/in/loremipsum",
-  blog: "https://shiyzr.github.io",
+  blog: "https://shiyzr-blog.top",
   profilePicture: "/profile.jpeg",
   heroDescription:
     "I am currently pursuing a Bachelor of Science in Computer Science at the School of Electronics Engineering and Computer Science (EECS), Peking University.",

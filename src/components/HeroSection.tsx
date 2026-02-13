@@ -1,5 +1,5 @@
 import { personalInfo } from "@/lib/data";
-import { Mail, Github, MapPin, Linkedin } from "lucide-react";
+import { Mail, Github, MapPin, Linkedin, Globe } from "lucide-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
@@ -85,6 +85,20 @@ export default function HeroSection() {
                 <Github className="h-4 w-4 mr-2" />
                 🌟 GitHub
               </motion.a>
+
+              {personalInfo.blog && (
+                <motion.a
+                  href={personalInfo.blog}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  variants={childVariants}
+                  whileHover={{ scale: 1.05, color: "#4b5563" }}
+                >
+                  <Globe className="h-4 w-4 mr-2" />
+                  🌐 Blog
+                </motion.a>
+              )}
 
               {personalInfo.linkedin && (
                 <motion.a
